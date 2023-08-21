@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DrawingBoard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-        <h1 class="Title">Etch-a-Sketch!</h1>         
+        <h1 class="title">Etch-a-Sketch!</h1>         
     </div>
     
     <div class="main">
-        <btn class="color">Freestyle Mode</btn>
-        <btn class="rainbow">Rainbow Mode</btn>
-        <btn class="erase">Eraser</btn>
-        <btn class="reset">Let`s erase that!</btn>
+
+        <button class="color">Freestyle Mode</button>
+        <button class="rainbow">Rainbow Mode</button>
+        <button class="erase">Eraser</button>
+        <button class="reset">Let`s erase that!</button>
+        
+    </div>
+
+    <div class="glider">
+
+        <input type="range" value="24" min="1" max="60" id="range-slider"
+        onmousemove="rangeSliderValue(this.value)" onChange="rangeSlider(this.value)">
+        <div id="level-bar"></div>
+            <p class="grid-size">Grid size: <span id="range-value">24</span> x <span id="range-value">24</span></p>
+    
+    </div>
+   
+    <div class="grid-container">
+        
+
     </div>
 
     <footer class="footer">
@@ -23,5 +40,7 @@
             document.write(new Date().getFullYear());
         </script>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
