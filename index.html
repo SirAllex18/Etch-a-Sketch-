@@ -13,12 +13,17 @@
     
     <div class="main">
 
-        <button class="color">Freestyle Mode</button>
-        <button class="rainbow">Rainbow Mode</button>
-        <button class="erase">Eraser</button>
-        <button class="reset">Let`s erase that!</button>
+        <button id="color" onclick="ColorMode()">Freestyle Mode</button>
+        <button id="rainbow">Rainbow Mode</button>
+        <button id="erase">Eraser</button>
+        <button id="reset">Let`s erase that!</button>
         
     </div>
+
+    <div class="grid-wrapper">
+        <div class="grid-container" id ="grid-container"></div>
+    </div>
+
 
     <div class="glider">
 
@@ -28,12 +33,7 @@
             <p class="grid-size">Grid size: <span id="range-value">24</span> x <span id="range-value">24</span></p>
     
     </div>
-   
-    <div class="grid-container">
-        
-
-    </div>
-
+    
     <footer class="footer">
         <p>BearingPoint All rigths Reserverd</p>
         <script>
