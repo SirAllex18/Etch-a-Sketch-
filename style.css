@@ -1,3 +1,4 @@
+
 .title{
     display: flex;
     align-items: center;
@@ -13,7 +14,7 @@
     width: 35%;
 }
 
-.color,.rainbow,.reset,.erase{
+#color,#rainbow,#reset,#erase{
     padding: 20px;
     margin: 20px;
     margin-left: 100px;
@@ -22,3 +23,17 @@
 
 }
 
+.grid-container{
+    display: grid;
+    border: black 10px;
+    border-style:solid;
+    width: 500px;
+    height: 500px;
+}
+
+.grid-wrapper{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
