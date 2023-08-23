@@ -1,12 +1,27 @@
-function createGrid(x){
-    for(let rows = 0; rows > x; rows++){
-        for(let columns = 0; columns > x; columns++){
-            document.getElementsById("#container").append("<div class='grid'></div>");
-        };
-    };
+function change(){
+   gridDiv.style.color = "red";
+};
 
-    document.getElementsByClassName("grid").width(960/x);
-    document.getElementsByClassName("grid").height(960/x);
+function setupGrid(size){
+    const grid = document.getElementById("grid-container");
+    grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`
+    grid.style.gridTemplateRows = `repeat(${size}, 1fr)`
+
+    for(let i = 0; i < size * size; i++){
+        const gridDiv = document.createElement("div");
+        grid.appendChild(gridDiv);
+    }
+  
 }
 
-createGrid(30);
+function ColorMode(){
+    grid = addEventListener(onmouseover, change);
+
+}
+
+
+
+
+
+
+window.onload = () => setupGrid(30  );
