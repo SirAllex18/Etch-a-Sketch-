@@ -31,6 +31,7 @@ function resetGrid(){
     grid.innerHTML = ""
     setupGrid(DEFAULT_SIZE)
     updateSize(DEFAULT_SIZE)
+    slider.value = "16";
 }
 
 function updateSize(value){
