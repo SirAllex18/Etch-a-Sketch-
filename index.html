@@ -13,32 +13,27 @@
     
     <div class="main">
 
-        <button id="color" onclick="ColorMode()">Freestyle Mode</button>
-        <button id="rainbow">Rainbow Mode</button>
-        <button id="erase">Eraser</button>
-        <button id="reset">Let`s erase that!</button>
-        
+        <div class="btn-set">
+
+            <button id="color">Freestyle Mode</button>
+            <button id="rainbow">Rainbow Mode</button>
+            <button id="erase">Eraser</button>
+            <button id="reset">Refresh</button>
+
+            <div class="slider">
+                <input type="range" value="24" min="1" max="60" id="range-slider">
+                <div id="range-value">Grid size: 16 x 16</div>
+           </div>
+        </div>
+
+        <div class="grid-wrapper">
+            <div class="grid-container" id ="grid-container"></div>
+        </div>
+
     </div>
 
-    <div class="grid-wrapper">
-        <div class="grid-container" id ="grid-container"></div>
-    </div>
-
-
-    <div class="glider">
-
-        <input type="range" value="24" min="1" max="60" id="range-slider"
-        onmousemove="rangeSliderValue(this.value)" onChange="rangeSlider(this.value)">
-        <div id="level-bar"></div>
-            <p class="grid-size">Grid size: <span id="range-value">24</span> x <span id="range-value">24</span></p>
-    
-    </div>
-    
     <footer class="footer">
-        <p>BearingPoint All rigths Reserverd</p>
-        <script>
-            document.write(new Date().getFullYear());
-        </script>
+        <p>ALLEX & BearingPoint All rigths Reserverd</p>
     </footer>
 
     <script src="script.js"></script>

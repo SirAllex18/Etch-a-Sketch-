@@ -1,4 +1,6 @@
-
+body{
+    background-color: grey;
+}
 .title{
     display: flex;
     align-items: center;
@@ -10,8 +12,9 @@
 
 .main{
     display: flex;
-    flex-direction: column;
-    width: 35%;
+    margin-top: 200px;
+    justify-content: center;
+   
 }
 
 #color,#rainbow,#reset,#erase{
@@ -20,7 +23,6 @@
     margin-left: 100px;
     border-width: 4px;
     border-radius: 15px;
-
 }
 
 .grid-container{
@@ -34,6 +36,36 @@
 .grid-wrapper{
 
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+
+
+}
+.btn-set{
+    margin-top: 60px;
+}
+button {
+    display: block;
+    width: 200px;
+    height: auto;
+
+}
+
+.slider{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.footer{
+    display: flex;
     justify-content: flex-end;
-    align-items:center;
+    color: red;
+    font-size: 20px;
+    margin-top: 60px;
+
 }
