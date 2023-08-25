@@ -6,7 +6,7 @@ const resetBtn = document.getElementById("reset")
 const slider = document.getElementById("range-slider")
 const DEFAULT_SIZE = 16
 let sliderValue = document.getElementById("range-value")
-let current_mode = "color"
+let current_mode = ""
 
 function setupGrid(size){
     
